@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://github.com/deekondasathish/sathishETL/blob/main/sample",
+			"url": "https://github.com/deekondasathish/sathishETL/blob/main/sample.txt",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
