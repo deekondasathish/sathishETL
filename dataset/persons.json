@@ -15,13 +15,16 @@
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
+			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
 		"schema": [
 			{
+				"name": "fname",
 				"type": "String"
 			},
 			{
+				"name": "lname",
 				"type": "String"
 			}
 		]
