@@ -8,8 +8,14 @@
 		"AzureBlobStorage1_connectionString": {
 			"value": ""
 		},
+		"StorageAccount_accountKey": {
+			"value": ""
+		},
 		"RestService1_properties_typeProperties_url": {
 			"value": "https://github.com/deekondasathish/sathishETL/blob/main/sample.txt"
+		},
+		"StorageAccount_properties_typeProperties_url": {
+			"value": "https://storageaccount1982sd.dfs.core.windows.net/"
 		}
 	}
 }
