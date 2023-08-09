@@ -27,6 +27,10 @@
 			"type": "string",
 			"defaultValue": "https://storageaccount1982sd.dfs.core.windows.net/"
 		},
+		"EventTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/80ea84e8-afce-4851-928a-9e2219724c69/resourceGroups/1-07fcdc76-playground-sandbox/providers/Microsoft.Storage/storageAccounts/storageaccount1982sd"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -68,6 +72,9 @@
 					},
 					"StorageAccount_properties_typeProperties_url": {
 						"value": "[parameters('StorageAccount_properties_typeProperties_url')]"
+					},
+					"EventTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('EventTrigger_properties_typeProperties_scope')]"
 					}
 				}
 			},

@@ -26,6 +26,10 @@
 		"StorageAccount_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storageaccount1982sd.dfs.core.windows.net/"
+		},
+		"EventTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/80ea84e8-afce-4851-928a-9e2219724c69/resourceGroups/1-07fcdc76-playground-sandbox/providers/Microsoft.Storage/storageAccounts/storageaccount1982sd"
 		}
 	},
 	"variables": {
@@ -282,6 +286,36 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/dataflows/personload')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/EventTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "pipeline3",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/container1982sdsource/blobs/triggerfile",
+					"ignoreEmptyBlobs": false,
+					"scope": "[parameters('EventTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/pipeline3')]"
 			]
 		},
 		{
