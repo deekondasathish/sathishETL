@@ -1,0 +1,9 @@
+{
+	"name": "datafactory1982sd2",
+	"location": "EastUS",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "03d30e60-fe45-4716-b712-6c3979a7a342",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
