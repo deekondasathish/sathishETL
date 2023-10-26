@@ -5,19 +5,11 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"dataset": {
-						"referenceName": "persons",
-						"type": "DatasetReference"
-					},
 					"name": "sourcepersons"
 				}
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "TargetDB_persons",
-						"type": "DatasetReference"
-					},
 					"name": "sink1"
 				}
 			],
@@ -28,22 +20,12 @@
 				"          lname as string",
 				"     ),",
 				"     allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     ignoreNoFilesFound: false) ~> sourcepersons",
+				"     validateSchema: false) ~> sourcepersons",
 				"sourcepersons sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          fname as string,",
-				"          lname as string",
-				"     ),",
-				"     deletable:false,",
-				"     insertable:true,",
-				"     updateable:false,",
-				"     upsertable:false,",
-				"     format: 'table',",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true,",
-				"     errorHandlingOption: 'stopOnFirstError') ~> sink1"
+				"     format: 'table') ~> sink1"
 			]
 		}
 	}
