@@ -1,0 +1,9 @@
+{
+	"name": "testingdatafactorysathish",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fdc46e3a-cd2a-4c2b-873c-7d44454ec14e",
+		"tenantId": "84f1e4ea-8554-43e1-8709-f0b8589ea118"
+	}
+}
