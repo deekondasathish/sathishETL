@@ -1,0 +1,35 @@
+{
+	"name": "ecashBorrowersFiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageAccountSathish",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"LinkedServiceParam": "1"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Persons.txt",
+				"fileSystem": "container1982sdsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "firstname",
+				"type": "String"
+			},
+			{
+				"name": "lastname",
+				"type": "String"
+			}
+		]
+	}
+}
