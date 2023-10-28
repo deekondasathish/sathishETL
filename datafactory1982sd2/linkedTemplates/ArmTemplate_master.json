@@ -7,29 +7,17 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "datafactory1982sd2"
 		},
-		"AzureBlobStorage1_connectionString": {
+		"AzureSqlDatabaseSathish_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureBlobStorage1'"
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabaseSathish'"
 		},
-		"AzureSqlDatabase1_connectionString": {
+		"StorageAccountSathish_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+			"metadata": "Secure string for 'accountKey' of 'StorageAccountSathish'"
 		},
-		"StorageAccount_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'StorageAccount'"
-		},
-		"RestService1_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://github.com/deekondasathish/sathishETL/blob/main/sample.txt"
-		},
-		"StorageAccount_properties_typeProperties_url": {
+		"StorageAccountSathish_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://storageaccount1982sd.dfs.core.windows.net/"
-		},
-		"EventTrigger_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/80ea84e8-afce-4851-928a-9e2219724c69/resourceGroups/1-07fcdc76-playground-sandbox/providers/Microsoft.Storage/storageAccounts/storageaccount1982sd"
 		},
 		"containerUri": {
 			"type": "string",
@@ -58,23 +46,14 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureBlobStorage1_connectionString": {
-						"value": "[parameters('AzureBlobStorage1_connectionString')]"
+					"AzureSqlDatabaseSathish_connectionString": {
+						"value": "[parameters('AzureSqlDatabaseSathish_connectionString')]"
 					},
-					"AzureSqlDatabase1_connectionString": {
-						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					"StorageAccountSathish_accountKey": {
+						"value": "[parameters('StorageAccountSathish_accountKey')]"
 					},
-					"StorageAccount_accountKey": {
-						"value": "[parameters('StorageAccount_accountKey')]"
-					},
-					"RestService1_properties_typeProperties_url": {
-						"value": "[parameters('RestService1_properties_typeProperties_url')]"
-					},
-					"StorageAccount_properties_typeProperties_url": {
-						"value": "[parameters('StorageAccount_properties_typeProperties_url')]"
-					},
-					"EventTrigger_properties_typeProperties_scope": {
-						"value": "[parameters('EventTrigger_properties_typeProperties_scope')]"
+					"StorageAccountSathish_properties_typeProperties_url": {
+						"value": "[parameters('StorageAccountSathish_properties_typeProperties_url')]"
 					}
 				}
 			},

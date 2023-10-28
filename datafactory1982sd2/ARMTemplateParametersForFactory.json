@@ -5,23 +5,14 @@
 		"factoryName": {
 			"value": "datafactory1982sd2"
 		},
-		"AzureBlobStorage1_connectionString": {
+		"AzureSqlDatabaseSathish_connectionString": {
 			"value": ""
 		},
-		"AzureSqlDatabase1_connectionString": {
+		"StorageAccountSathish_accountKey": {
 			"value": ""
 		},
-		"StorageAccount_accountKey": {
-			"value": ""
-		},
-		"RestService1_properties_typeProperties_url": {
-			"value": "https://github.com/deekondasathish/sathishETL/blob/main/sample.txt"
-		},
-		"StorageAccount_properties_typeProperties_url": {
+		"StorageAccountSathish_properties_typeProperties_url": {
 			"value": "https://storageaccount1982sd.dfs.core.windows.net/"
-		},
-		"EventTrigger_properties_typeProperties_scope": {
-			"value": "/subscriptions/80ea84e8-afce-4851-928a-9e2219724c69/resourceGroups/1-07fcdc76-playground-sandbox/providers/Microsoft.Storage/storageAccounts/storageaccount1982sd"
 		}
 	}
 }
